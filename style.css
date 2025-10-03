@@ -1,0 +1,130 @@
+ * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #03A473;
+    --secondary: #b0001a;
+    --tertiary: #FAFAFA;
+    --text-color: #000;
+
+    --bg-gradiant: linear-gradient(to left, #036245, #02543c, #014732, #013a29, #012e20);
+    --providers-bg-color: radial-gradient(circle, #03a473, #00845d, #006648, #004934, #012e20);
+    --border-gradient: linear-gradient(45deg, var(--tertiary), var(--secondary), var(--primary), var(--secondary), var(--primary), var(--tertiary));
+
+    --button-secondary-color: #b0001a;
+}
+
+.custom-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-content {
+    width: 100%;
+    max-width: 1320px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+header {
+    background-image: var(--bg-gradiant);
+    height: 66px;
+    padding: 16px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--border-gradient);
+    background-size: 200% 100%;
+    animation: flagAnimation 6s linear infinite;
+}
+
+@media screen and (min-width: 577px) {
+    header {
+        height: 90px;
+        padding: 10px 0px;
+    }
+}
+
+.content-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburguer-menu {
+    display: flex;
+    height: 24px;
+    margin-right: 10px;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: 0px solid transparent;
+}
+
+.first {
+    border-top: 2px solid var(--tertiary);
+    height: 1px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.middle {
+    border-top: 2px solid var(--tertiary);
+    height: 1px;
+    width: 24px;
+    margin-bottom: 5px;
+}
+
+.last {
+    border-top: 2px solid var(--tertiary);
+    height: 1px;
+    width: 18px;
+}
+
+.language {
+    display: none;
+}
+
+.custom-buttom {
+    height: 38px;
+    color: #f6f6f6;
+    margin-right: 0;
+    border: 2px solid #b0001a;
+    box-shadow: 0 0 14px 1px #b0001a;
+    background-color: #b0001a;
+    background: linear-gradient(to right, transparent 50%, #b0001a 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .4s ease-out;
+}
+@media screen and (min-width: 577px) {
+    .language {
+        display: block;
+    }
+}
+
+
+@keyframes flagAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
