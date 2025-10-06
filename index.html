@@ -17,11 +17,11 @@
         <div class="custom-content">
             <div class="content-container">
                 <div class="d-flex">
-                    <button class="hamburguer-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#hamburguerMenu"
-                        aria-controls="hamburguerMenu">
-                            <div class="first"></div>
-                            <div class="middle"></div>
-                            <div class="last"></div>
+                    <button class="hamburguer-menu" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#hamburguerMenu" aria-controls="hamburguerMenu">
+                        <div class="first"></div>
+                        <div class="middle"></div>
+                        <div class="last"></div>
                     </button>
                     <div class="logo-container">
                         <img src="" alt="logo">
@@ -30,8 +30,8 @@
 
                 <div class="d-flex">
                     <div class="buttons-container">
-                        <a href="#" class="custom-buttom">Iniciar Sesión</a>
-                        <a href="#" class="custom-buttom">Unirse</a>
+                        <a href="#" class="custom-buttom login">Iniciar Sesión</a>
+                        <a href="#" class="custom-buttom sign-up">Unirse</a>
                     </div>
                     <div class="language">
                         <img src="" alt="language">
@@ -56,16 +56,123 @@
         </div>
     </header>
     <div class="custom-container">
-        <div class="wrapper"></div>
+        <div class="custom-bg-img"
+            style="background-image: url(./img/background-layout-1.581e16f7f5ff6964.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;">
+        </div>
+        <div class="wrapper">
+            <div id="mainCarrousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarrousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarrousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarrousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/Banner_75__1190.jpg" class="custom-img-carrousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Banner_75__1190.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Banner_75__1190.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#mainCarrousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarrousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+
+            <ul class="nav main-banner-menu">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <div class="main-banner-icon-container"><img src="./img/icn-featured-games.svg" alt="icon"
+                                class="main-banner-icon"></div> Apuestas Deportivas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="main-banner-icon-container"><img src="./img/icn-featured-games.svg" alt="icon"
+                                class="main-banner-icon"></div> Apuestas en Vivo
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carreras de Caballos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promociones</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="custom-container">
+        <div class="custom-bg-img"
+            style="background-image: url(./img/background-layout-1.581e16f7f5ff6964.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;background-attachment: fixed;">
+        </div>
+        <div class="custom-content">
+            <h2 class="title-slider">Proveedores</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(./img/Aviatrix.jpg);">
+                        <div class="content-info">
+                            <div class="play-button pulse-animation"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Card 2</div>
+                    <div class="swiper-slide">Card 3</div>
+                    <div class="swiper-slide">Card 4</div>
+                    <div class="swiper-slide">Card 5</div>
+                    <div class="swiper-slide">Card 6</div>
+                    <div class="swiper-slide">Card 7</div>
+                    <div class="swiper-slide">Card 8</div>
+                </div> <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="custom-content">
+            <h2 class="title-slider">Proveedores</h2>
+            <div class="swiper providerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(./img/Aviatrix.jpg);">
+                        <div class="content-info">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Card 2</div>
+                    <div class="swiper-slide">Card 3</div>
+                    <div class="swiper-slide">Card 4</div>
+                    <div class="swiper-slide">Card 5</div>
+                    <div class="swiper-slide">Card 6</div>
+                    <div class="swiper-slide">Card 7</div>
+                    <div class="swiper-slide">Card 8</div>
+                </div> <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
 
     <footer class="custom-container">
         <div class="custom-content">
-
         </div>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./swiper-main.js"></script>
+    <script src="./swiper-provider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
