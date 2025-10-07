@@ -170,6 +170,17 @@ header::after {
     z-index: 1;
     pointer-events: none;
 }
+.custom-bg-img.games-sliders::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0,.99) 0%,rgba(0,0,0,.4) 20%,rgba(0,0,0,.6) 80%,rgba(0,0,0,.99) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
 .custom-img-carrousel{
     width: 100%;
 }
@@ -273,6 +284,8 @@ header::after {
     color: #FFF;
     border-radius: 50px;
     display: none;
+    right: 0px;
+    top: 45%;
 }
 .swiper-button-next::after{
     font-size: 22px;
@@ -287,6 +300,8 @@ header::after {
     color: #FFF;
     border-radius: 50px;
     display: none;
+    left: 0px;
+    top: 45%;
 }
 
 .swiper-slide{
@@ -341,6 +356,9 @@ header::after {
     background: #b0001a;
     transform: rotate(360deg);
 }
+.mySwiper .swiper-pagination{
+    bottom: -5px;
+}
 .pulse-animation {
     animation: pulse-animation 2s infinite;
 }
@@ -350,6 +368,15 @@ header::after {
 }
 
 
+.swiper-pagination-bullet{
+    background-color: var(--button-secondary-color);
+    width: 13px;
+    height: 13px;
+    opacity: 0.8;
+}
+.swiper-pagination-bullet-active{
+    opacity: 1;
+}
 .providerSwiper .swiper-button-next{
     width: 45px;
     height: 45px;
@@ -357,6 +384,8 @@ header::after {
     color: #FFF;
     border-radius: 50px;
     display: flex;
+    top: 41%;
+    right: 0px;
 }
 .providerSwiper .swiper-button-next::after{
     font-size: 22px;
@@ -371,8 +400,12 @@ header::after {
     color: #FFF;
     border-radius: 50px;
     display: flex;
+    top: 41%;
+    left: 0px;
 }
-
+.providerSwiper .swiper-pagination{
+    bottom: -5px;
+}
 @media screen and (min-width: 577px) {
     .language {
         display: block;
